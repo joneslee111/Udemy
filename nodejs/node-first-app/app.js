@@ -16,6 +16,5 @@ app.use((req, res, next) => {
 });
 
 // app is a valid request handler so can be passed to createServer
-const server = http.createServer(app);
 
-server.listen(3000);
+app.listen(3000);
