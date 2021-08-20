@@ -37,7 +37,6 @@ const requestHandler = (req, res) => {
     res.write('<body><h1>This is the body</h1></body>')
     res.write('</html>');
     res.end();
-
 };
 
 module.exports = requestHandler;
