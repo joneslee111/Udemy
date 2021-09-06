@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded());
 app.use('/admin', adminRoutes);
 app.use(shopRoutes);
 
-// add a catch all route
+// add a catch all routes
 app.use((req, res, next) => {
     res.status(404).sendFile(path.join(__dirname, 'views', '404.html'));
 });
